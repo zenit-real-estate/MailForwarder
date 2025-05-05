@@ -1,0 +1,1280 @@
+[
+    {
+        "code": "V000763",
+        "locality": "Lugano (TI)",
+        "owner": "Manzi Matteo",
+        "price": 950000,
+        "for_rent": false,
+        "requests_count": 2,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000633",
+        "locality": "Lugano (TI)",
+        "owner": "Alloggi TIcino SA",
+        "price": 800,
+        "for_rent": true,
+        "requests_count": 14,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000751",
+        "locality": "Lugano (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 380000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Davide"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000765",
+        "locality": "Minusio (TI)",
+        "owner": "Garzoni Andrea",
+        "price": 1210000,
+        "for_rent": false,
+        "requests_count": 2,
+        "sellers": [
+            "Hristina",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000580",
+        "locality": "Monteggio (TI)",
+        "owner": "Macchi Sergio",
+        "price": 525000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina",
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000766",
+        "locality": "Minusio (TI)",
+        "owner": "Garzoni Andrea",
+        "price": 1165000,
+        "for_rent": false,
+        "requests_count": 6,
+        "sellers": [
+            "Hristina",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000662",
+        "locality": "Ligornetto (TI)",
+        "owner": "Nespoli Franco",
+        "price": 1100,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Angelo"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000657",
+        "locality": "Bellinzona (TI)",
+        "owner": "De Rosa Raffaele",
+        "price": 2000,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000608",
+        "locality": "Lugano (TI)",
+        "owner": "Pagnamenta Gianni",
+        "price": 3800,
+        "for_rent": true,
+        "requests_count": 3,
+        "sellers": [
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000008",
+        "locality": "Mendrisio (TI)",
+        "owner": "Yeldo",
+        "price": 1100,
+        "for_rent": true,
+        "requests_count": 6,
+        "sellers": [
+            "Marco",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000764",
+        "locality": "Minusio (TI)",
+        "owner": "Garzoni Andrea",
+        "price": 740000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000716",
+        "locality": "Pregassona (TI)",
+        "owner": "Caruso Cristian",
+        "price": 378000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Angelo"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000756",
+        "locality": "Ascona (TI)",
+        "owner": "STUDIO D'ARCHITETTURA GUSCETTI Giovanni Guscetti",
+        "price": 2250000,
+        "for_rent": false,
+        "requests_count": 2,
+        "sellers": [
+            "Hristina",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000498",
+        "locality": "Lugano (TI)",
+        "owner": "Alloggi TIcino SA",
+        "price": 700,
+        "for_rent": true,
+        "requests_count": 21,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000525",
+        "locality": "Br\u00e8 sopra Lugano (TI)",
+        "owner": "Taddei Marco",
+        "price": 850,
+        "for_rent": true,
+        "requests_count": 7,
+        "sellers": [
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000282",
+        "locality": "Lugano (TI)",
+        "owner": "Manzi Matteo",
+        "price": 3000000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000685",
+        "locality": "Lugano (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 1000000000,
+        "for_rent": true,
+        "requests_count": 5,
+        "sellers": [
+            "Enrico"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000384",
+        "locality": "Chiasso (TI)",
+        "owner": "Alloggi TIcino SA",
+        "price": 700,
+        "for_rent": true,
+        "requests_count": 3,
+        "sellers": [
+            "Angelo"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000684",
+        "locality": "Lugano (TI)",
+        "owner": "Alloggi TIcino SA",
+        "price": 1530,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Angelo"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000312",
+        "locality": "Manno (TI)",
+        "owner": "Heller Moshe",
+        "price": 950,
+        "for_rent": true,
+        "requests_count": 14,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000446",
+        "locality": "Agno (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 590000,
+        "for_rent": false,
+        "requests_count": 2,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000414",
+        "locality": "Curio (TI)",
+        "owner": "Gerelli Andrea",
+        "price": 1050,
+        "for_rent": true,
+        "requests_count": 21,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000378",
+        "locality": "Stabio (TI)",
+        "owner": "Bugliaro Cesare",
+        "price": 1650,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000592",
+        "locality": "Balerna (TI)",
+        "owner": "Ricci Irina",
+        "price": 1700,
+        "for_rent": true,
+        "requests_count": 4,
+        "sellers": [
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000571",
+        "locality": "Lugano (TI)",
+        "owner": "BPMG SA",
+        "price": 1300000,
+        "for_rent": false,
+        "requests_count": 2,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000299",
+        "locality": "Melide (TI)",
+        "owner": "ldacostruzioni / Daniele Bottoni Daniele Bottoni",
+        "price": 2750000,
+        "for_rent": false,
+        "requests_count": 2,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000686",
+        "locality": "Paradiso (TI)",
+        "owner": "Guidicelli Avvocato",
+        "price": 800,
+        "for_rent": true,
+        "requests_count": 22,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000678",
+        "locality": "Davesco-Soragno (TI)",
+        "owner": "Lo Turco",
+        "price": 1900,
+        "for_rent": true,
+        "requests_count": 6,
+        "sellers": [
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000500",
+        "locality": "Lugano (TI)",
+        "owner": "Beltrametti Luigi Leo",
+        "price": 1150,
+        "for_rent": true,
+        "requests_count": 35,
+        "sellers": [
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000810",
+        "locality": "Gordola (TI)",
+        "owner": "Garzoni Andrea",
+        "price": 716000,
+        "for_rent": false,
+        "requests_count": 3,
+        "sellers": [
+            "Hristina",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000808",
+        "locality": "Gordola (TI)",
+        "owner": "Garzoni Andrea",
+        "price": 662000,
+        "for_rent": false,
+        "requests_count": 3,
+        "sellers": [
+            "Hristina",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000805",
+        "locality": "Gordola (TI)",
+        "owner": "Garzoni Andrea",
+        "price": 862000,
+        "for_rent": false,
+        "requests_count": 6,
+        "sellers": [
+            "Hristina",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000804",
+        "locality": "Gordola (TI)",
+        "owner": "Garzoni Andrea",
+        "price": 775000,
+        "for_rent": false,
+        "requests_count": 3,
+        "sellers": [
+            "Hristina",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000797",
+        "locality": "Cureglia (TI)",
+        "owner": "paltenghi alessandro",
+        "price": 1700000,
+        "for_rent": false,
+        "requests_count": 3,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000691",
+        "locality": "Chiasso (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 800,
+        "for_rent": true,
+        "requests_count": 10,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000690",
+        "locality": "Stabio (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 1300,
+        "for_rent": true,
+        "requests_count": 15,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000689",
+        "locality": "Chiasso (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 900,
+        "for_rent": true,
+        "requests_count": 15,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000147",
+        "locality": "Novazzano (TI)",
+        "owner": "Alloggi TIcino SA",
+        "price": 1300,
+        "for_rent": true,
+        "requests_count": 7,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000782",
+        "locality": "Cureglia (TI)",
+        "owner": "paltenghi alessandro",
+        "price": 1700000,
+        "for_rent": false,
+        "requests_count": 2,
+        "sellers": [
+            "Hristina",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000310",
+        "locality": "Vacallo (TI)",
+        "owner": "Gerelli Andrea",
+        "price": 950,
+        "for_rent": true,
+        "requests_count": 5,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000635",
+        "locality": "Lugano (TI)",
+        "owner": "Margnini Marco",
+        "price": 900,
+        "for_rent": true,
+        "requests_count": 2,
+        "sellers": [
+            "Hristina",
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000572",
+        "locality": "Lugano (TI)",
+        "owner": "Vaglio - Sutter",
+        "price": 1590,
+        "for_rent": true,
+        "requests_count": 2,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000522",
+        "locality": "Bedano (TI)",
+        "owner": "Nespoli Franco",
+        "price": 1300,
+        "for_rent": true,
+        "requests_count": 10,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000553",
+        "locality": "Odogno (TI)",
+        "owner": "Tomasello Bonesi Arianna",
+        "price": 2390000,
+        "for_rent": false,
+        "requests_count": 2,
+        "sellers": [
+            "AC",
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000437",
+        "locality": "Bellinzona (TI)",
+        "owner": "Caruso Cristian",
+        "price": 280000,
+        "for_rent": false,
+        "requests_count": 3,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000669",
+        "locality": "Lugano (TI)",
+        "owner": "BPMG SA",
+        "price": 1250000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000828",
+        "locality": "Lugano (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 440000,
+        "for_rent": false,
+        "requests_count": 12,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000411",
+        "locality": "Stabio (TI)",
+        "owner": "Rio Maria",
+        "price": 1000,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000460",
+        "locality": "Balerna (TI)",
+        "owner": "Alloggi TIcino SA",
+        "price": 260000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000767",
+        "locality": "Minusio (TI)",
+        "owner": "Garzoni Andrea",
+        "price": 790000,
+        "for_rent": false,
+        "requests_count": 3,
+        "sellers": [
+            "Hristina",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000781",
+        "locality": "Pregassona (TI)",
+        "owner": "Garzoni Andrea",
+        "price": 755000,
+        "for_rent": false,
+        "requests_count": 2,
+        "sellers": [
+            "Hristina",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000829",
+        "locality": "Viganello (TI)",
+        "owner": "cassina annamaria",
+        "price": 1200000,
+        "for_rent": false,
+        "requests_count": 4,
+        "sellers": [
+            "Niccol\u00c3\u00b2"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000580",
+        "locality": "Breganzona (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 900,
+        "for_rent": true,
+        "requests_count": 8,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000402",
+        "locality": "Lugano (TI)",
+        "owner": "Gerelli Andrea",
+        "price": 1650,
+        "for_rent": true,
+        "requests_count": 6,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000537",
+        "locality": "Magliaso (TI)",
+        "owner": "Della Matera Deborah",
+        "price": 530000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000405",
+        "locality": "Bellinzona (TI)",
+        "owner": "Manzi Matteo",
+        "price": 390000,
+        "for_rent": false,
+        "requests_count": 3,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000621",
+        "locality": "Bellinzona (TI)",
+        "owner": "Manzi Matteo",
+        "price": 760000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000408",
+        "locality": "Bellinzona (TI)",
+        "owner": "Manzi Matteo",
+        "price": 775000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000695",
+        "locality": "Agno (TI)",
+        "owner": "Milesi Gabriele e Fabio ( responsabile signora Edith)",
+        "price": 1070,
+        "for_rent": true,
+        "requests_count": 10,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000688",
+        "locality": "Cademario (TI)",
+        "owner": "De Bernardis Fabio",
+        "price": 65006000,
+        "for_rent": true,
+        "requests_count": 2,
+        "sellers": [
+            "Niccol\u00f2"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000507",
+        "locality": "Mendrisio (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 1150,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000748",
+        "locality": "Castagnola (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 2500000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Davide"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000425",
+        "locality": "Agno (TI)",
+        "owner": "Guerra Mattia",
+        "price": 375000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000407",
+        "locality": "Bellinzona (TI)",
+        "owner": "Manzi Matteo",
+        "price": 420000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000311",
+        "locality": "Vacallo (TI)",
+        "owner": "Gerelli Andrea",
+        "price": 900,
+        "for_rent": true,
+        "requests_count": 3,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000395",
+        "locality": "Bissone (TI)",
+        "owner": "Askar H. SA",
+        "price": 385000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000815",
+        "locality": "Cademario (TI)",
+        "owner": "Garzoni Andrea",
+        "price": 580000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Niccol\u00f2"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000673",
+        "locality": "Lugano (TI)",
+        "owner": "Beltrametti Luigi Leo",
+        "price": 1000,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000388",
+        "locality": "Lugano (TI)",
+        "owner": "Badrutt Silvia",
+        "price": 15900000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000798",
+        "locality": "Caslano (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 570000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000663",
+        "locality": "Bellinzona (TI)",
+        "owner": "Elez Verica",
+        "price": 1400,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000838",
+        "locality": "Cademario (TI)",
+        "owner": "De Bernardis Fabio",
+        "price": 1,
+        "for_rent": false,
+        "requests_count": 2,
+        "sellers": [
+            "Niccol\u00f2"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000679",
+        "locality": "Chiasso (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 1500,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000780",
+        "locality": "Pregassona (TI)",
+        "owner": "Garzoni Andrea",
+        "price": 1128000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000699",
+        "locality": "Cademario (TI)",
+        "owner": "miloro simone",
+        "price": 10003000,
+        "for_rent": true,
+        "requests_count": 4,
+        "sellers": [
+            "Niccol\u00f2"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000413",
+        "locality": "Agno (TI)",
+        "owner": "Piattini Costruzioni sagl Piattini Diego",
+        "price": 1290000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Niccol\u00f2"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000683",
+        "locality": "Lugano (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 900,
+        "for_rent": true,
+        "requests_count": 2,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000573",
+        "locality": "Lugano (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 2650,
+        "for_rent": true,
+        "requests_count": 5,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000631",
+        "locality": "Lavena Ponte Tresa (VA)",
+        "owner": "Eurolaghi",
+        "price": 350000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000519",
+        "locality": "Bellinzona (TI)",
+        "owner": "Alloggi TIcino SA",
+        "price": 1200,
+        "for_rent": true,
+        "requests_count": 7,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000463",
+        "locality": "Bissone (TI)",
+        "owner": "Askar H. SA",
+        "price": 1300,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000495",
+        "locality": "Montagnola (TI)",
+        "owner": "Cotton Tom",
+        "price": 440000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000735",
+        "locality": "Bellinzona (TI)",
+        "owner": "Cecchi Stefano",
+        "price": 830000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000650",
+        "locality": "Agno (TI)",
+        "owner": "Piattini Costruzioni sagl Piattini Diego",
+        "price": 1350000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000207",
+        "locality": "Cadro (TI)",
+        "owner": "Mavaro Luca",
+        "price": 900000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "DG",
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000528",
+        "locality": "Magadino (TI)",
+        "owner": "Baggio Gianluigi",
+        "price": 790000,
+        "for_rent": false,
+        "requests_count": 0,
+        "sellers": [
+            "Niccol\u00c3\u00b2"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000609",
+        "locality": "Bioggio (TI)",
+        "owner": "Manzi Matteo",
+        "price": 682500,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina",
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000240",
+        "locality": "Pedrinate (TI)",
+        "owner": "Mavaro Luca",
+        "price": 800000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "DG",
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000770",
+        "locality": "Minusio (TI)",
+        "owner": "Garzoni Andrea",
+        "price": 2865000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000786",
+        "locality": "Pregassona (TI)",
+        "owner": "Garzoni Andrea",
+        "price": 1107000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000839",
+        "locality": "Lugano (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 462000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000645",
+        "locality": "Agno (TI)",
+        "owner": "Edilesi SA",
+        "price": 683500,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000326",
+        "locality": "Capriasca (TI)",
+        "owner": "Birth Gustav",
+        "price": 1900,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000694",
+        "locality": "Aldesago (TI)",
+        "owner": "Camponovo Paolo",
+        "price": 2150,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Niccol\u00f2"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000698",
+        "locality": "Melide (TI)",
+        "owner": "peduzzi marina",
+        "price": 2400,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Niccol\u00f2"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000223",
+        "locality": "Mendrisio (TI)",
+        "owner": "Yeldo",
+        "price": 4350000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000370",
+        "locality": "Vernate (TI)",
+        "owner": "Conte Giovanni",
+        "price": 515000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000369",
+        "locality": "Morazzone (VA)",
+        "owner": "Gavazzi Mara",
+        "price": 390000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000372",
+        "locality": "Saltrio (VA)",
+        "owner": "ldacostruzioni / Daniele Bottoni Daniele Bottoni",
+        "price": 390000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000589",
+        "locality": "Lugano (TI)",
+        "owner": "Guglielmana Gianfranco",
+        "price": 830000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000561",
+        "locality": "Bironico (TI)",
+        "owner": "Masullo Maria",
+        "price": 395000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "AC",
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000398",
+        "locality": "Curio (TI)",
+        "owner": "Gerelli Andrea",
+        "price": 1350,
+        "for_rent": true,
+        "requests_count": 2,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000614",
+        "locality": "Ruvigliana (TI)",
+        "owner": "dourvas saki",
+        "price": 1,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "MR"
+        ],
+        "acquirers": []
+    }
+]

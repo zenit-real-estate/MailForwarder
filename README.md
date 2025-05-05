@@ -1,2 +1,2 @@
 # MailForwarder
-This is the tool created by Enrico to forward the emails
+Python application to forward data to different agents of Zenit Real Estate
