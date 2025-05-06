@@ -68,7 +68,7 @@
         "owner": "Garzoni Andrea",
         "price": 1165000,
         "for_rent": false,
-        "requests_count": 6,
+        "requests_count": 7,
         "sellers": [
             "Hristina",
             "Sergio"
@@ -350,7 +350,7 @@
         "owner": "Beltrametti Luigi Leo",
         "price": 1150,
         "for_rent": true,
-        "requests_count": 35,
+        "requests_count": 37,
         "sellers": [
             "Hristina"
         ],
@@ -592,7 +592,7 @@
         "owner": "Rio Maria",
         "price": 1000,
         "for_rent": true,
-        "requests_count": 1,
+        "requests_count": 2,
         "sellers": [
             "Hristina"
         ],
@@ -655,7 +655,7 @@
         "owner": "Proprietario sconosciuto",
         "price": 900,
         "for_rent": true,
-        "requests_count": 8,
+        "requests_count": 9,
         "sellers": [
             "Silvia"
         ],
@@ -1274,6 +1274,31 @@
         "requests_count": 1,
         "sellers": [
             "MR"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000864",
+        "locality": "Lugano (TI)",
+        "owner": "Guglielmana Gianfranco",
+        "price": 830000,
+        "for_rent": false,
+        "requests_count": 2,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000768",
+        "locality": "Minusio (TI)",
+        "owner": "Garzoni Andrea",
+        "price": 1955000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina",
+            "Sergio"
         ],
         "acquirers": []
     }
