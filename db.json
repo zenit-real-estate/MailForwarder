@@ -265,7 +265,7 @@
         "owner": "Gerelli Andrea",
         "price": 1050,
         "for_rent": true,
-        "requests_count": 21,
+        "requests_count": 22,
         "sellers": [
             "Silvia"
         ],
@@ -667,7 +667,7 @@
         "owner": "Gerelli Andrea",
         "price": 1650,
         "for_rent": true,
-        "requests_count": 6,
+        "requests_count": 7,
         "sellers": [
             "Silvia"
         ],
@@ -923,7 +923,7 @@
         "owner": "miloro simone",
         "price": 10003000,
         "for_rent": true,
-        "requests_count": 4,
+        "requests_count": 5,
         "sellers": [
             "Niccol\u00f2"
         ],
@@ -973,7 +973,7 @@
         "owner": "Eurolaghi",
         "price": 350000,
         "for_rent": false,
-        "requests_count": 1,
+        "requests_count": 2,
         "sellers": [
             "Marco"
         ],
@@ -985,7 +985,7 @@
         "owner": "Alloggi TIcino SA",
         "price": 1200,
         "for_rent": true,
-        "requests_count": 7,
+        "requests_count": 8,
         "sellers": [
             "Angelo",
             "Hristina"
@@ -1259,7 +1259,7 @@
         "owner": "Gerelli Andrea",
         "price": 1350,
         "for_rent": true,
-        "requests_count": 2,
+        "requests_count": 3,
         "sellers": [
             "Silvia"
         ],
@@ -1271,7 +1271,7 @@
         "owner": "dourvas saki",
         "price": 1,
         "for_rent": false,
-        "requests_count": 1,
+        "requests_count": 2,
         "sellers": [
             "MR"
         ],
@@ -1299,6 +1299,81 @@
         "sellers": [
             "Hristina",
             "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000624",
+        "locality": "Valganna (VA)",
+        "owner": "Ferrara Luca",
+        "price": 520000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000671",
+        "locality": "Chiasso (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 265000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000708",
+        "locality": "Ligornetto (TI)",
+        "owner": "Herrera Lorena",
+        "price": 1200,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Silvia"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000779",
+        "locality": "Pregassona (TI)",
+        "owner": "Garzoni Andrea",
+        "price": 1290000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina",
+            "Sergio"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000212",
+        "locality": "Cadro (TI)",
+        "owner": "Mavaro Luca",
+        "price": 365000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "DG",
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000705",
+        "locality": "Vacallo (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 1700,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Angelo"
         ],
         "acquirers": []
     }
