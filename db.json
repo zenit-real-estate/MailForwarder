@@ -1376,5 +1376,17 @@
             "Angelo"
         ],
         "acquirers": []
+    },
+    {
+        "code": "A000588",
+        "locality": "Lugano (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 290,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "MR"
+        ],
+        "acquirers": []
     }
 ]
