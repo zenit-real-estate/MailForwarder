@@ -190,7 +190,7 @@ def monitor_inbox():
                     # IMAP IDLE to listen for new emails
                     server.idle()
                     print("IDLE mode enabled. Waiting for new emails...")
-                    server.idle_check(timeout=10)  # Check for new emails every 10 seconds
+                    server.idle_check(timeout=300)  # Check for new emails every 300 seconds
                     server.idle_done()
 
                     # Fetch new emails
