@@ -13,6 +13,7 @@ import os
 import smtplib
 import re
 import time
+import ssl
 
 # Configuration
 IMAP_SERVER = 'imap.gmail.com'
@@ -20,6 +21,11 @@ SMTP_SERVER = 'smtp.gmail.com'
 EMAIL_ADDRESS = 'info@zenitrealestate.com'
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 SMTP_PORT = 465
+
+# Create SSL context
+ssl_context = ssl.create_default_context()
+ssl_context.check_hostname = False
+ssl_context.verify_mode = ssl.CERT_NONE
 
 objects = db.load_objects()
 
@@ -170,37 +176,40 @@ def monitor_inbox():
     """
     Monitor the inbox for new emails using IMAP IDLE.
     """
-    with IMAPClient(IMAP_SERVER) as server:
-        # Login to the IMAP server
-        server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
-        server.select_folder('INBOX')
+    try:
+        with IMAPClient(IMAP_SERVER, ssl_context=ssl_context) as server:
+            # Login to the IMAP server
+            server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
+            server.select_folder('INBOX')
 
-        print("Monitoring inbox for new emails...")
+            print("Monitoring inbox for new emails...")
 
-        while True:
-            # Wait for new emails
-            try:
-                # IMAP IDLE to listen for new emails
-                server.idle()
-                print("IDLE mode enabled. Waiting for new emails...")
-                server.idle_check(timeout=10)  # Check for new emails every 60 seconds
-                server.idle_done()
+            while True:
+                # Wait for new emails
+                try:
+                    # IMAP IDLE to listen for new emails
+                    server.idle()
+                    print("IDLE mode enabled. Waiting for new emails...")
+                    server.idle_check(timeout=10)  # Check for new emails every 10 seconds
+                    server.idle_done()
 
-                # Fetch new emails
-                messages = server.search(['UNSEEN'])
-                for msg_id in messages:
-                    try:
-                        # Fetch the raw email message
-                        raw_message = server.fetch(msg_id, ['RFC822'])[msg_id][b'RFC822']
-                        process_email(raw_message, msg_id, server)
-                        print("\n")
-                    except Exception as e:
-                        print(f"Error processing email with ID {msg_id}: {e}")
-                        continue  # Continue to the next email
-                break
-            except Exception as e:
-                print(f"Error: {e}")
-                time.sleep(5)  # Wait and retry on error
+                    # Fetch new emails
+                    messages = server.search(['UNSEEN'])
+                    for msg_id in messages:
+                        try:
+                            # Fetch the raw email message
+                            raw_message = server.fetch(msg_id, ['RFC822'])[msg_id][b'RFC822']
+                            process_email(raw_message, msg_id, server)
+                            print("\n")
+                        except Exception as e:
+                            print(f"Error processing email with ID {msg_id}: {e}")
+                            continue  # Continue to the next email
+                except Exception as e:
+                    print(f"Error in IDLE mode: {e}")
+                    time.sleep(5)  # Wait and retry on error
+    except Exception as e:
+        print(f"Connection error: {e}")
+        time.sleep(5)  # Wait before retrying connection
 
 if __name__ == "__main__":
     monitor_inbox()
