@@ -33,6 +33,9 @@ class MiogestObject:
         self.requests_count = requests_count
         self.sellers = sellers if sellers else []
         self.acquirers = acquirers if acquirers else []
+        self.provider_count = {
+            
+        }
 
     def __str__(self):
         """String representation of the object."""
