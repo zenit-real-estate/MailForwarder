@@ -16,6 +16,7 @@ import time
 import ssl
 import signal
 import sys
+import threading
 from logger import logger
 
 # Load environment variables
@@ -35,12 +36,22 @@ ssl_context.verify_mode = ssl.CERT_NONE
 
 # Global flag for graceful shutdown
 shutdown_requested = False
+shutdown_event = threading.Event()
+shutdown_start_time = None
+SHUTDOWN_TIMEOUT = 10  # Force exit after 10 seconds
 
 def signal_handler(signum, frame):
     """Handle shutdown signals gracefully."""
-    global shutdown_requested
-    logger.log_warning(f"Received signal {signum}, initiating graceful shutdown")
-    shutdown_requested = True
+    global shutdown_requested, shutdown_start_time
+    if not shutdown_requested:
+        shutdown_start_time = time.time()
+        logger.log_warning(f"Received signal {signum}, initiating graceful shutdown")
+        shutdown_requested = True
+        shutdown_event.set()
+    else:
+        # Second Ctrl+C - force immediate exit
+        logger.log_warning("Force shutdown requested - exiting immediately")
+        sys.exit(1)
 
 # Register signal handlers
 signal.signal(signal.SIGINT, signal_handler)
@@ -50,7 +61,12 @@ objects = db.load_objects()
 logger.log_startup()
 
 def update_requests_count(miogest_code):
-    global objects
+    global objects, shutdown_requested
+    
+    # Don't perform expensive operations during shutdown
+    if shutdown_requested:
+        logger.log_warning(f"Skipping database update for {miogest_code} - shutdown in progress")
+        return
     
     if miogest_code in objects:
         old_count = objects[miogest_code].requests_count
@@ -60,14 +76,18 @@ def update_requests_count(miogest_code):
         logger.main_logger.info(f"Updated requests for {miogest_code}: {new_count}")
     else:
         logger.log_warning(f"Miogest code {miogest_code} not found in database, attempting to fetch from Miogest")
-        obj = miogest.find_miogest_object(miogest_code)
-        if obj != None:
-            objects[miogest_code] = obj
-            db.save_request_counts(objects)
-            logger.log_database_update(miogest_code, 0, 1)
-            logger.main_logger.info(f"Added new object {miogest_code} to database")
+        # Skip expensive Miogest lookup during shutdown
+        if not shutdown_requested:
+            obj = miogest.find_miogest_object(miogest_code)
+            if obj != None:
+                objects[miogest_code] = obj
+                db.save_request_counts(objects)
+                logger.log_database_update(miogest_code, 0, 1)
+                logger.main_logger.info(f"Added new object {miogest_code} to database")
+            else:
+                logger.log_error(f"Failed to find Miogest object for code {miogest_code}", "update_requests_count")
         else:
-            logger.log_error(f"Failed to find Miogest object for code {miogest_code}", "update_requests_count")
+            logger.log_warning(f"Skipping Miogest lookup for {miogest_code} - shutdown in progress")
 
 
 def extract_miogest_code(subject):
@@ -171,6 +191,13 @@ def process_email(raw_message, msg_id, imap_server):
     Process the incoming email and forward it.
     :param raw_message: The raw email message.
     """
+    global shutdown_requested
+    
+    # Skip processing if shutdown is requested
+    if shutdown_requested:
+        logger.log_warning(f"Skipping email processing - shutdown in progress")
+        return
+        
     start_time = time.time()
     
     try:
@@ -238,6 +265,8 @@ def monitor_inbox():
     """
     Monitor the inbox for new emails using IMAP IDLE.
     """
+    global shutdown_requested, shutdown_start_time
+    
     while not shutdown_requested:
         try:
             logger.log_connection_attempt("IMAP", IMAP_SERVER)
@@ -249,14 +278,43 @@ def monitor_inbox():
                 logger.main_logger.info("Monitoring inbox for new emails...")
 
                 while not shutdown_requested:
+                    # Check shutdown timeout
+                    if shutdown_start_time and (time.time() - shutdown_start_time) > SHUTDOWN_TIMEOUT:
+                        logger.log_warning(f"Shutdown timeout reached ({SHUTDOWN_TIMEOUT}s), forcing exit")
+                        return
+                        
                     # Wait for new emails
                     try:
                         # IMAP IDLE to listen for new emails
                         server.idle()
                         logger.log_idle_mode(True)
-                        server.idle_check(timeout=300)  # Check for new emails every 300 seconds
+                        
+                        # Use a shorter timeout and check shutdown flag
+                        timeout = 10  # 10 seconds instead of 30
+                        start_time = time.time()
+                        
+                        while not shutdown_requested and (time.time() - start_time) < timeout:
+                            # Check shutdown timeout
+                            if shutdown_start_time and (time.time() - shutdown_start_time) > SHUTDOWN_TIMEOUT:
+                                logger.log_warning(f"Shutdown timeout reached ({SHUTDOWN_TIMEOUT}s), forcing exit")
+                                return
+                                
+                            try:
+                                server.idle_check(timeout=2)  # Check every 2 seconds
+                                break  # If we get here, there was activity
+                            except Exception as e:
+                                if shutdown_requested:
+                                    break
+                                # Continue waiting
+                                pass
+                        
                         server.idle_done()
                         logger.log_idle_mode(False)
+
+                        # Check if we should shutdown
+                        if shutdown_requested:
+                            logger.main_logger.info("Shutdown requested, stopping email monitoring")
+                            return
 
                         # Fetch new emails
                         messages = server.search(['UNSEEN'])
@@ -265,7 +323,7 @@ def monitor_inbox():
                             
                         for msg_id in messages:
                             if shutdown_requested:
-                                break
+                                return
                             try:
                                 # Fetch the raw email message
                                 raw_message = server.fetch(msg_id, ['RFC822'])[msg_id][b'RFC822']
@@ -274,26 +332,66 @@ def monitor_inbox():
                             except Exception as e:
                                 logger.log_error(f"Error processing email with ID {msg_id}: {e}", "monitor_inbox")
                                 continue  # Continue to the next email
+                                
                     except Exception as e:
+                        if shutdown_requested:
+                            return
                         logger.log_error(f"Error in IDLE mode: {e}", "monitor_inbox")
-                        time.sleep(5)  # Wait and retry on error
+                        time.sleep(2)  # Wait and retry on error
                         
         except Exception as e:
+            if shutdown_requested:
+                return
             logger.log_connection_failure("IMAP", IMAP_SERVER, str(e))
-            if not shutdown_requested:
-                logger.main_logger.info("Waiting 5 seconds before retrying connection...")
-                time.sleep(5)  # Wait before retrying connection
+            logger.main_logger.info("Waiting 5 seconds before retrying connection...")
+            time.sleep(5)  # Wait before retrying connection
+
+
+def graceful_shutdown(reason="Normal shutdown"):
+    """Perform graceful shutdown operations."""
+    global shutdown_start_time
+    
+    logger.log_warning("Starting graceful shutdown process")
+    
+    # Save any pending database changes
+    try:
+        db.save_request_counts(objects)
+        logger.main_logger.info("Database changes saved during shutdown")
+    except Exception as e:
+        logger.log_error(f"Failed to save database during shutdown: {e}", "graceful_shutdown")
+    
+    # Cleanup old logs
+    try:
+        logger.cleanup_old_logs(30)
+        logger.main_logger.info("Old logs cleaned up during shutdown")
+    except Exception as e:
+        logger.log_error(f"Failed to cleanup logs during shutdown: {e}", "graceful_shutdown")
+    
+    # Log shutdown
+    logger.log_shutdown(reason)
+    
+    # Flush all log handlers to ensure logs are written
+    for handler in logger.main_logger.handlers:
+        handler.flush()
+    for handler in logger.error_logger.handlers:
+        handler.flush()
+    for handler in logger.activity_logger.handlers:
+        handler.flush()
 
 
 if __name__ == "__main__":
     try:
+        logger.main_logger.info("Starting MailForwarder application...")
+        logger.main_logger.info("Press Ctrl+C to stop the application gracefully")
+        logger.main_logger.info("Press Ctrl+C twice for immediate exit")
         monitor_inbox()
     except KeyboardInterrupt:
-        logger.log_shutdown("Keyboard interrupt")
+        logger.main_logger.info("Keyboard interrupt received")
+        graceful_shutdown("Keyboard interrupt")
     except Exception as e:
         logger.log_error(f"Unexpected error: {e}", "main")
-        logger.log_shutdown("Unexpected error")
+        graceful_shutdown("Unexpected error")
     finally:
-        # Cleanup old logs (keep last 30 days)
-        logger.cleanup_old_logs(30)
-        logger.log_shutdown("Application terminated")
+        logger.main_logger.info("Application terminated")
+        # Force exit to ensure we don't hang
+        sys.exit(0)
