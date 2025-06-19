@@ -1,2 +1,39 @@
+# Environment variables
 .env
-__pycache__
+.env.local
+.env.*.local
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Logs directory
+logs/
+*.log
+*.log.*
+
+# Database files (if they contain sensitive data)
+db.json
+*.db
+*.sqlite
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
