@@ -19,8 +19,7 @@
         "for_rent": true,
         "requests_count": 14,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -68,7 +67,7 @@
         "owner": "Garzoni Andrea",
         "price": 1165000,
         "for_rent": false,
-        "requests_count": 7,
+        "requests_count": 8,
         "sellers": [
             "Hristina",
             "Sergio"
@@ -170,8 +169,7 @@
         "for_rent": true,
         "requests_count": 21,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -241,7 +239,7 @@
         "owner": "Heller Moshe",
         "price": 950,
         "for_rent": true,
-        "requests_count": 14,
+        "requests_count": 16,
         "sellers": [
             "Silvia"
         ],
@@ -265,7 +263,7 @@
         "owner": "Gerelli Andrea",
         "price": 1050,
         "for_rent": true,
-        "requests_count": 22,
+        "requests_count": 24,
         "sellers": [
             "Silvia"
         ],
@@ -289,7 +287,7 @@
         "owner": "Ricci Irina",
         "price": 1700,
         "for_rent": true,
-        "requests_count": 4,
+        "requests_count": 5,
         "sellers": [
             "Hristina"
         ],
@@ -327,8 +325,7 @@
         "for_rent": true,
         "requests_count": 22,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -416,8 +413,7 @@
         "for_rent": false,
         "requests_count": 3,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -429,8 +425,7 @@
         "for_rent": true,
         "requests_count": 10,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -440,10 +435,9 @@
         "owner": "Proprietario sconosciuto",
         "price": 1300,
         "for_rent": true,
-        "requests_count": 15,
+        "requests_count": 20,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -455,8 +449,7 @@
         "for_rent": true,
         "requests_count": 15,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -466,10 +459,9 @@
         "owner": "Alloggi TIcino SA",
         "price": 1300,
         "for_rent": true,
-        "requests_count": 7,
+        "requests_count": 8,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -531,8 +523,7 @@
         "for_rent": true,
         "requests_count": 10,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -579,10 +570,9 @@
         "owner": "Proprietario sconosciuto",
         "price": 440000,
         "for_rent": false,
-        "requests_count": 12,
+        "requests_count": 14,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -592,7 +582,7 @@
         "owner": "Rio Maria",
         "price": 1000,
         "for_rent": true,
-        "requests_count": 2,
+        "requests_count": 3,
         "sellers": [
             "Hristina"
         ],
@@ -606,8 +596,7 @@
         "for_rent": false,
         "requests_count": 1,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -617,7 +606,7 @@
         "owner": "Garzoni Andrea",
         "price": 790000,
         "for_rent": false,
-        "requests_count": 3,
+        "requests_count": 4,
         "sellers": [
             "Hristina",
             "Sergio"
@@ -655,7 +644,7 @@
         "owner": "Proprietario sconosciuto",
         "price": 900,
         "for_rent": true,
-        "requests_count": 9,
+        "requests_count": 11,
         "sellers": [
             "Silvia"
         ],
@@ -667,7 +656,7 @@
         "owner": "Gerelli Andrea",
         "price": 1650,
         "for_rent": true,
-        "requests_count": 7,
+        "requests_count": 9,
         "sellers": [
             "Silvia"
         ],
@@ -753,8 +742,7 @@
         "for_rent": true,
         "requests_count": 1,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -836,7 +824,7 @@
         "owner": "Beltrametti Luigi Leo",
         "price": 1000,
         "for_rent": true,
-        "requests_count": 1,
+        "requests_count": 2,
         "sellers": [
             "Hristina"
         ],
@@ -862,8 +850,7 @@
         "for_rent": false,
         "requests_count": 1,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -899,8 +886,7 @@
         "for_rent": true,
         "requests_count": 1,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -935,9 +921,9 @@
         "owner": "Piattini Costruzioni sagl Piattini Diego",
         "price": 1290000,
         "for_rent": false,
-        "requests_count": 1,
+        "requests_count": 2,
         "sellers": [
-            "Niccol\u00f2"
+            "Silvia"
         ],
         "acquirers": []
     },
@@ -949,8 +935,7 @@
         "for_rent": true,
         "requests_count": 2,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -962,8 +947,7 @@
         "for_rent": true,
         "requests_count": 5,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -987,8 +971,7 @@
         "for_rent": true,
         "requests_count": 8,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -1012,8 +995,7 @@
         "for_rent": false,
         "requests_count": 1,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -1073,7 +1055,7 @@
         "owner": "Manzi Matteo",
         "price": 682500,
         "for_rent": false,
-        "requests_count": 1,
+        "requests_count": 2,
         "sellers": [
             "Hristina",
             "Marco"
@@ -1127,8 +1109,7 @@
         "for_rent": false,
         "requests_count": 1,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -1162,7 +1143,7 @@
         "owner": "Camponovo Paolo",
         "price": 2150,
         "for_rent": true,
-        "requests_count": 1,
+        "requests_count": 2,
         "sellers": [
             "Niccol\u00f2"
         ],
@@ -1259,7 +1240,7 @@
         "owner": "Gerelli Andrea",
         "price": 1350,
         "for_rent": true,
-        "requests_count": 3,
+        "requests_count": 4,
         "sellers": [
             "Silvia"
         ],
@@ -1310,8 +1291,7 @@
         "for_rent": false,
         "requests_count": 1,
         "sellers": [
-            "Angelo",
-            "Hristina"
+            "Angelo"
         ],
         "acquirers": []
     },
@@ -1333,7 +1313,7 @@
         "owner": "Herrera Lorena",
         "price": 1200,
         "for_rent": true,
-        "requests_count": 1,
+        "requests_count": 2,
         "sellers": [
             "Silvia"
         ],
@@ -1386,6 +1366,68 @@
         "requests_count": 1,
         "sellers": [
             "MR"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000712",
+        "locality": "Biasca (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 1235,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000709",
+        "locality": "Bellinzona (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 1350,
+        "for_rent": true,
+        "requests_count": 2,
+        "sellers": [
+            "Angelo",
+            "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000402",
+        "locality": "Bellinzona (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 765000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Marco"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000960",
+        "locality": "Bioggio (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 2500000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Niccol\u00f2"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000676",
+        "locality": "Lugano (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 1050,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Hristina"
         ],
         "acquirers": []
     }
