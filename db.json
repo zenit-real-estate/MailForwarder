@@ -644,7 +644,7 @@
         "owner": "Proprietario sconosciuto",
         "price": 900,
         "for_rent": true,
-        "requests_count": 11,
+        "requests_count": 12,
         "sellers": [
             "Silvia"
         ],
@@ -656,7 +656,7 @@
         "owner": "Gerelli Andrea",
         "price": 1650,
         "for_rent": true,
-        "requests_count": 9,
+        "requests_count": 10,
         "sellers": [
             "Silvia"
         ],
@@ -1240,7 +1240,7 @@
         "owner": "Gerelli Andrea",
         "price": 1350,
         "for_rent": true,
-        "requests_count": 4,
+        "requests_count": 5,
         "sellers": [
             "Silvia"
         ],
@@ -1313,7 +1313,7 @@
         "owner": "Herrera Lorena",
         "price": 1200,
         "for_rent": true,
-        "requests_count": 2,
+        "requests_count": 3,
         "sellers": [
             "Silvia"
         ],
@@ -1375,7 +1375,7 @@
         "owner": "Proprietario sconosciuto",
         "price": 1235,
         "for_rent": true,
-        "requests_count": 1,
+        "requests_count": 2,
         "sellers": [
             "Angelo",
             "Hristina"
@@ -1388,7 +1388,7 @@
         "owner": "Proprietario sconosciuto",
         "price": 1350,
         "for_rent": true,
-        "requests_count": 2,
+        "requests_count": 3,
         "sellers": [
             "Angelo",
             "Hristina"
@@ -1428,6 +1428,31 @@
         "requests_count": 1,
         "sellers": [
             "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000711",
+        "locality": "Curio (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 1400,
+        "for_rent": true,
+        "requests_count": 1,
+        "sellers": [
+            "Angelo"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000140",
+        "locality": "Comano (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 1450000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "DG",
+            "Marco"
         ],
         "acquirers": []
     }

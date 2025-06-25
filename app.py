@@ -243,8 +243,10 @@ def process_email(raw_message, msg_id, imap_server):
                 logger.log_warning(f"No recipient found for miogest_code {miogest_code}", "process_email")
             elif isinstance(recipients, list):
                 forward_raw_email(raw_message, recipients)
+                # logger.log_warning(f"Not forwarded but it could {miogest_code}", "process_email")
             else:
                 forward_raw_email(raw_message, recipients[0], recipients[1])
+                # logger.log_warning(f"Not forwarded but it could {miogest_code}", "process_email")
                 
             logger.log_email_processed(msg_id, miogest_code, recipients)
         else:
