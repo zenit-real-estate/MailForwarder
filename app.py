@@ -316,7 +316,7 @@ def monitor_inbox():
                         logger.log_idle_mode(True)
                         
                         # Use a shorter timeout and check shutdown flag
-                        timeout = 60  # 60 seconds instead of 30
+                        timeout = 300  # 60 seconds instead of 30
                         start_time = time.time()
                         
                         while not shutdown_requested and (time.time() - start_time) < timeout:

@@ -265,7 +265,7 @@
         "owner": "Gerelli Andrea",
         "price": 1050,
         "for_rent": true,
-        "requests_count": 22,
+        "requests_count": 23,
         "sellers": [
             "Silvia"
         ],
@@ -1333,7 +1333,7 @@
         "owner": "Herrera Lorena",
         "price": 1200,
         "for_rent": true,
-        "requests_count": 1,
+        "requests_count": 2,
         "sellers": [
             "Silvia"
         ],
