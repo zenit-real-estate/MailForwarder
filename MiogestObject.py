@@ -2,13 +2,13 @@ import re
 import json
 
 def parse_price(price_str):
-    """Convert a price string like '580’000 CHF' into an integer (e.g., 580000)."""
+    """Convert a price string like '580'000 CHF' into an integer (e.g., 580000)."""
     cleaned_price = re.sub(r"[^\d]", "", price_str)
     return int(cleaned_price) if cleaned_price else 0
 
 def format_price(price_int):
-    """Convert an integer price into the Swiss format '580’000 CHF'."""
-    return f"{price_int:,.0f}".replace(",", "’") + " CHF"
+    """Convert an integer price into the Swiss format '580'000 CHF'."""
+    return f"{price_int:,.0f}".replace(",", "'") + " CHF"
 
 class MiogestObject:
     def __init__(self, code: str, locality: str, owner: str, price: str, for_rent: bool, 
@@ -33,9 +33,6 @@ class MiogestObject:
         self.requests_count = requests_count
         self.sellers = sellers if sellers else []
         self.acquirers = acquirers if acquirers else []
-        self.provider_count = {
-            
-        }
 
     def __str__(self):
         """String representation of the object."""
