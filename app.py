@@ -40,6 +40,15 @@ shutdown_event = threading.Event()
 shutdown_start_time = None
 SHUTDOWN_TIMEOUT = 10  # Force exit after 10 seconds
 
+PROVIDER_PATTERNS = [
+    (r'homegate\.ch', 'homegate.ch'),
+    (r'immobiliare\.it', 'immobiliare.it'),
+    (r'idealista', 'idealista'),
+    (r'newhome', 'newhome'),
+    (r'realadvisor', 'realadvisor'),
+    (r'jamesedition', 'jamesedition'),
+]
+
 def signal_handler(signum, frame):
     """Handle shutdown signals gracefully."""
     global shutdown_requested, shutdown_start_time
@@ -60,26 +69,42 @@ signal.signal(signal.SIGTERM, signal_handler)
 objects = db.load_objects()
 logger.log_startup()
 
-def update_requests_count(miogest_code):
+def extract_provider(sender, subject, body):
+    """
+    Extract provider from sender, subject, or body.
+    Returns a string provider name or 'unknown'.
+    """
+    text = f"{sender} {subject} {body}".lower()
+    for pattern, name in PROVIDER_PATTERNS:
+        if re.search(pattern, text):
+            return name
+    return "unknown"
+
+def update_requests_count(miogest_code, provider=None):
     global objects, shutdown_requested
-    
-    # Don't perform expensive operations during shutdown
     if shutdown_requested:
         logger.log_warning(f"Skipping database update for {miogest_code} - shutdown in progress")
         return
-    
     if miogest_code in objects:
-        old_count = objects[miogest_code].requests_count
-        objects[miogest_code].requests_count += 1
-        new_count = objects[miogest_code].requests_count
+        obj = objects[miogest_code]
+        old_count = obj.requests_count
+        obj.requests_count += 1
+        new_count = obj.requests_count
+        # Provider counts
+        if provider:
+            if not hasattr(obj, 'provider_counts') or obj.provider_counts is None:
+                obj.provider_counts = {}
+            obj.provider_counts[provider] = obj.provider_counts.get(provider, 0) + 1
         logger.log_database_update(miogest_code, old_count, new_count)
         logger.main_logger.info(f"Updated requests for {miogest_code}: {new_count}")
+        db.save_request_counts(objects)
     else:
         logger.log_warning(f"Miogest code {miogest_code} not found in database, attempting to fetch from Miogest")
-        # Skip expensive Miogest lookup during shutdown
         if not shutdown_requested:
             obj = miogest.find_miogest_object(miogest_code)
-            if obj != None:
+            if obj is not None:
+                if provider:
+                    obj.provider_counts = {provider: 1}
                 objects[miogest_code] = obj
                 db.save_request_counts(objects)
                 logger.log_database_update(miogest_code, 0, 1)
@@ -223,6 +248,7 @@ def process_email(raw_message, msg_id, imap_server):
         
         # 2. extract miogest code from the email subject
         miogest_code = extract_miogest_code(subject)
+        provider = extract_provider(sender, subject, body)
 
         # 3. If a code is a found, we proceed to process it otherwise print it's not found and mark the email "to read"
         if miogest_code:
@@ -233,7 +259,7 @@ def process_email(raw_message, msg_id, imap_server):
             classify_source(imap_server, sender, msg_id)
             
             # 5. Update the request count for the miogest code
-            update_requests_count(miogest_code)
+            update_requests_count(miogest_code, provider)
 
             # 6. Get all the recipients for the email
             recipients = miogest.get_agent_emails_from_list(objects[miogest_code].sellers)
@@ -290,7 +316,7 @@ def monitor_inbox():
                         logger.log_idle_mode(True)
                         
                         # Use a shorter timeout and check shutdown flag
-                        timeout = 10  # 10 seconds instead of 30
+                        timeout = 300  # 60 seconds instead of 30
                         start_time = time.time()
                         
                         while not shutdown_requested and (time.time() - start_time) < timeout:
