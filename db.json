@@ -239,7 +239,7 @@
         "owner": "Heller Moshe",
         "price": 950,
         "for_rent": true,
-        "requests_count": 16,
+        "requests_count": 17,
         "sellers": [
             "Silvia"
         ],
@@ -788,7 +788,7 @@
         "owner": "Gerelli Andrea",
         "price": 900,
         "for_rent": true,
-        "requests_count": 3,
+        "requests_count": 5,
         "sellers": [
             "Silvia"
         ],
@@ -1264,7 +1264,7 @@
         "owner": "Guglielmana Gianfranco",
         "price": 830000,
         "for_rent": false,
-        "requests_count": 2,
+        "requests_count": 3,
         "sellers": [
             "Marco"
         ],
@@ -1375,7 +1375,7 @@
         "owner": "Proprietario sconosciuto",
         "price": 1235,
         "for_rent": true,
-        "requests_count": 1,
+        "requests_count": 2,
         "sellers": [
             "Angelo",
             "Hristina"
@@ -1428,6 +1428,30 @@
         "requests_count": 1,
         "sellers": [
             "Hristina"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "V000859",
+        "locality": "Lugano (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 850000,
+        "for_rent": false,
+        "requests_count": 1,
+        "sellers": [
+            "Niccol\u00f2"
+        ],
+        "acquirers": []
+    },
+    {
+        "code": "A000736",
+        "locality": "Lugano (TI)",
+        "owner": "Proprietario sconosciuto",
+        "price": 1800,
+        "for_rent": true,
+        "requests_count": 2,
+        "sellers": [
+            "Angelo"
         ],
         "acquirers": []
     }
